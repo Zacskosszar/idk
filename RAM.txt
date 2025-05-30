@@ -1,0 +1,78 @@
+
+-----------------------------------------------------------------------------------------------------------------
+PR. Tim.
+Samsung Die:
+	Samsung B-Die
+	Samsung A-Die
+	Samsung C-Die
+	Samsung D-Die
+	Samsung E-Die
+	Samsung M-Die
+
+SK Hynix:
+	SK Hynix AFR
+	SK Hynix MFR
+	SK Hynix CJR
+	SK Hynix JJR
+	SK Hynix DJR
+	SK Hynix MJR
+
+Micron:  (. után Die->hely-> 
+	D9VPP
+	D9WHF/D9WFL
+	D9XPF/D9XPM
+	D9XSW
+	D9ZCM
+	Rev.E (D9WFH-based, optimized)
+	Rev.B (D9TBH, etc)
+
+
+
+FCLK (Adott)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SPD Dump -> tCL, tRCD, tRP, tRAS, V, MS, Manu.info !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+tCL   ==  tCL_ns = tCL * (2000 / DRAM_MTs)
+TRCDWR == 
+TRCDRD ==
+tRp ==
+tRAS == >= RCD + tCL || tRCD + tCL + 2-4 cycles
+tRC == tRP + tRAS
+tRFC == tRFC_ns = tRFC_base (from SPD) + (TempAdjustment)
+tRRDS == SPD value != (4)
+tRRDL == SPD value != (6)
+TFAW == tRRD_S * 4 + tRRD_L *4  #Minimum
+tWRTRS == 
+tWTRL ==
+tWR == SPD Value
+tRDRD SCL == 
+tWRWR SCL ==
+tCWL (CAS Write Latency) => tCL <= tCL - n
+tRTP (Read to Precharge) => 
+tRDWR ==
+tWRRD ==
+tWRWR SC == 
+tWRWR SD ==
+tWRWR DD ==
+tRDRD SC ==
+tRDRD SD == 
+tRDRD DD ==
+tCKE ==
+-------------------------------------------------------------------------------------------------------
+
+DRAM Voltage
+SOC voltage
+
+procODT
+RTT_NOM
+RTT_WR
+RTT_PARK
+
+if PDM
+if GDM
+
+CAD_BUS ClkDrv
+CAD_BUS AddrCmdDrv
+CAD_BUS CsOdtDrv
+CAD_BUS CkeDrv
+CAD_BUS AddrCMD
+CAD_BUS CsOdt
+CAD_BUS Cke
